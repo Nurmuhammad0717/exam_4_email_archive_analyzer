@@ -1,0 +1,6 @@
+The number of all messages : 5
+The most messages send by :[marketing_team]
+All users showed the same activeness
+The number of all messages : 5
+The most messages send by :[marketing_team]
+All users showed the same activeness
