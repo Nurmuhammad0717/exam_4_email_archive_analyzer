@@ -60,8 +60,12 @@ public class EmailAnalyseService {
     }
 
     private String getTheme(String line) {
-        String[] s = line.split(" " );
-        return s[4];
+        Pattern pattern = Pattern.compile("\\[[A-Z].+\\s.+]");
+        Matcher matcher = pattern.matcher(line);
+        if (matcher.find()) {
+            return matcher.group();
+        }
+        return null;
     }
 
     private String getReceiver(String line) {
@@ -75,8 +79,6 @@ public class EmailAnalyseService {
     }
 
     private String getDate(String line) {
-        String[] s = line.split(" ");
-        String date = s[0];
 
         Pattern pattern = Pattern.compile("\\[\\d{4}-\\d{2}-\\d{2}\\s\\d{2}:\\d{2}:\\d{2}]");
         Matcher matcher = pattern.matcher(line);
