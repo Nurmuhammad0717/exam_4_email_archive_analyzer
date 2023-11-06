@@ -1,0 +1,30 @@
+The number of all messages : 5
+The most messages send by :[marketing_team]. They sent 0 messages.
+The most messages received by :[jane@partnership.com]. They received 0 messages.
+The number of all messages : 5
+The most messages send by :[marketing_team]. They sent 0 messages.
+The most messages received by :[jane@partnership.com]. They received 0 messages.
+The number of all messages : 5
+The most messages send by :[marketing_team]. They sent 0 messages.
+The most messages received by :[jane@partnership.com]. They received 0 messages.
+The number of all messages : 5
+The most messages send by :[marketing_team]. They sent 0 messages.
+The most messages received by :[jane@partnership.com]. They received 0 messages.
+The number of all messages : 5
+All users showed the same activeness
+All users showed the same activeness
+The number of all messages : 5
+All users showed the same activeness
+All users showed the same activeness
+The number of all messages : 5
+The most messages send by :[marketing_team]. They sent 2 messages.
+The most messages received by :[jane@partnership.com]. They received 2 messages.
+The number of all messages : 5
+The most messages send by :[marketing_team]. They sent 2 messages.
+The most messages received by :[jane@partnership.com]. They received 2 messages.
+The number of all messages : 5
+The most messages send by :[marketing_team]. They sent 2 messages.
+The most messages received by :[jane@partnership.com]. They received 2 messages.
+The number of all messages : 5
+The most messages send by :[marketing_team]. They sent 2 messages.
+The most messages received by :[jane@partnership.com]. They received 2 messages.
