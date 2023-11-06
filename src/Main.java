@@ -38,7 +38,7 @@ public class Main {
         FileWriter fileWriter = null;
         try {
 
-            fileWriter = new FileWriter("output/e-mail_analysis_report.txt");
+            fileWriter = new FileWriter("output/e-mail_analysis_report.txt",true);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             bufferedWriter.write(emailAnalyseService.analysis(emailList).toString());
             bufferedWriter.close();

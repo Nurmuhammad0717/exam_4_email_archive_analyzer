@@ -103,13 +103,13 @@ public class EmailAnalyseService {
 
     private String getActiveReceiver(ArrayList<Email> data) {
         String user = null;
-        int max = 0;
+        int max = 1;
         for (int i = 0; i < data.size(); i++) {
 
             String name = data.get(i).getReceiver();
             int count = 0;
 
-            for (int j = i + 1; j < data.size() - 1; j++) {
+            for (int j = i ; j < data.size() ; j++) {
 
                 if (name.equals(data.get(j).getReceiver())) {
                     count++;
@@ -118,7 +118,7 @@ public class EmailAnalyseService {
             }
             if (name.equals(data.get(data.size() - 1))) count++;
 
-            if (count > max) {
+            if (count >= max) {
                 max = count;
                 user = data.get(i).getReceiver();
             }
@@ -127,20 +127,20 @@ public class EmailAnalyseService {
         if (user == null) {
             return "All users showed the same activeness";
         }
-        return "The most messages received by :" + user;
+        return "The most messages received by :" + user+ ". They received "+max+" messages.";
     }
 
 
     private String getActiveSender(ArrayList<Email> data) {
 
         String user = null;
-        int max = 0;
+        int max = 1;
         for (int i = 0; i < data.size(); i++) {
 
             String name = data.get(i).getSender();
             int count = 0;
 
-            for (int j = i + 1; j < data.size() - 1; j++) {
+            for (int j = i ; j < data.size() ; j++) {
 
                 if (name.equals(data.get(j).getSender())) {
                     count++;
@@ -158,7 +158,7 @@ public class EmailAnalyseService {
             if (user == null) {
                 return "All users showed the same activeness";
             }
-          return "The most messages send by :" + user;
+          return "The most messages send by :" + user+". They sent "+max+" messages.";
     }
 }
 
